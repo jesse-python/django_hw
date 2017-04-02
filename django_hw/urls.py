@@ -17,5 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^', include('apps.timedisplay.urls'))
+    url(r'^timedisplay/', include('apps.timedisplay.urls')),
+    url(r'^randword/', include('apps.randword.urls')),
 ]
