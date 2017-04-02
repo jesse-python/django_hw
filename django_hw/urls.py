@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^timedisplay/', include('apps.timedisplay.urls')),
     url(r'^randword/', include('apps.randword.urls')),
+    url(r'^surveyform/', include('apps.surveyform.urls'))
 ]
