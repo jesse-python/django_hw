@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% load staticfiles %}
+  <title>Document</title>
+</head>
+<body>
+  {% if ninja_color == "blue" %}
+    <img src="{% static "main/leo.jpg" %}" alt="">
+  {% elif ninja_color == "orange" %}
+    <img src="{% static "main/michaelangelo.jpg" %}" alt="">
+  {% elif ninja_color == "red" %}
+    <img src="{% static "main/character-raphael.png" %}" alt="">
+  {% elif ninja_color == "purple" %}
+    <img src="{% static "main/donatello.jpg" %}" alt="">
+  {% else %}
+    <img src="{% static "main/megan-fox-oct-2003.jpg" %}" alt="">
+  {% endif %}
+</body>
+</html>

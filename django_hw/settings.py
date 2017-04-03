@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.timedisplay',
     'apps.randword',
     'apps.surveyform',
+    'apps.disappearing_ninjas',
 ]
 
 MIDDLEWARE = [
