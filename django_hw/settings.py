@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'apps.randword',
     'apps.surveyform',
     'apps.disappearing_ninjas',
-    'apps.the_wall',
+    'apps.thewall',
 ]
 
 MIDDLEWARE = [

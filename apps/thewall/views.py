@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from forms import RegisterForm
+from django_hw.thewall.forms import RegisterForm
 from django.views.generic import View
 from django.contrib.auth import login, authenticate, forms, logout
 from django.http import HttpResponseRedirect
