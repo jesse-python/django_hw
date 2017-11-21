@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^randword/', include('apps.randword.urls')),
     url(r'^surveyform/', include('apps.surveyform.urls')),
     url(r'^disappearing_ninjas/', include('apps.disappearing_ninjas.urls')),
-    url(r'^thewall/', include('apps.thewall.urls'))
+    url(r'^thewall/', include('apps.the_wall.urls'))
 ]

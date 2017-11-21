@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to The Wall</title>
+</head>
+<body>
+
+  {% if errors %}
+  <ul>
+    {% for error in errors %}
+    <li>{{ error }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <h1>The Wall</h1>
+  <form action="{% url 'thewall-login'%}" method="post">
+    {% csrf_token %}
+    <fieldset>
+      <legend>Login Here</legend>
+      Email: <input type="email" name="email">
+      Password: <input type="password" name="password">
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <form action="{% url 'thewall-register' %}" method="post">
+    {% csrf_token %}
+    <fieldset>
+      <legend>Register Here</legend>
+      First Name: <input type="name" name="f_name">
+      Last Name: <input type="name" name="l_name">
+      Email: <input type="email" name="email">
+      Password: <input type="password" name="password">
+      Confirm Password: <input type="password" name="c_password">
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+</html>
